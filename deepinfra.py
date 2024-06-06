@@ -129,7 +129,7 @@ class ChatDeepInfra(BaseChatModel):
     # client: Any  #: :meta private:
     model_name: str = Field(default="mistralai/Mixtral-8x7B-Instruct-v0.1", alias="model")
     """Model name to use."""
-    deepinfra_api_token: Optional[str] = 'jwt:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJnaDo5MjI3Mjc5MSIsImV4cCI6MTcxODk2MzA5MX0.IsMx3PAkfKeiDTzw2baVWRi0vMlQ0M4NAidqgcaaTlM'
+    deepinfra_api_token: Optional[str] = 'YOUR DEEPINFRA TOKEN'
     request_timeout: Optional[float] = Field(default=600, alias="timeout")
     request_sleep: Optional[float] = Field(default=2, alias="sleep")
     temperature: Optional[float] = 0.7
